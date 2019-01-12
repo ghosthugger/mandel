@@ -2,7 +2,7 @@
 # FB36 - 20130706
 import Tkinter
 from Tkinter import *
-WIDTH = 640; HEIGHT = 480
+WIDTH = 1280; HEIGHT = 960
 xa = -2.0; xb = 1.0
 ya = -1.5; yb = 1.5
 maxIt = 256
