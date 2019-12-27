@@ -1,9 +1,9 @@
-from Tkinter import *
-import Tkinter
+from tkinter import *
+import tkinter
 
 class Test(Frame):
     def printit(self):
-        print "hi"
+        print("hi")
 
     def createWidgets(self):
         self.QUIT = Button(self, text='QUIT',
@@ -62,7 +62,7 @@ class Test(Frame):
         #        window = self #Tk()
         #        self.canvas = Canvas(window, width = WIDTH, height = HEIGHT, bg = "#000000")
         self.img = PhotoImage(width = self.WIDTH, height = self.HEIGHT)
-        self.canvasObject.create_image((0, 0), image = self.img, state = "normal", anchor = Tkinter.NW)
+        self.canvasObject.create_image((0, 0), image = self.img, state = "normal", anchor = tkinter.NW)
 
         for ky in range(self.HEIGHT):
             for kx in range(self.WIDTH):
