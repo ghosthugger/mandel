@@ -44,11 +44,11 @@ class Test(Frame):
         self.canvasObject.delete(self.rubberbandBox)
 
 
-        self.xa = ((self.startx / self.WIDTH) * (self.xb-self.xa)) -2.0;
-        self.xb = ((self.x_end / self.WIDTH) * (self.xb-self.xa)) -2.0
+        self.xa = ((self.startx / self.WIDTH) * (self.xb-self.xa)) + self.xa
+        self.xb = ((self.x_end / self.WIDTH) * (self.xb-self.xa)) + self.xa
 
-        self.ya = ((self.starty / self.HEIGHT) * (self.yb-self.ya)) -1.5;
-        self.yb = ((self.y_end / self.HEIGHT) * (self.yb-self.ya)) -1.5
+        self.ya = ((self.starty / self.HEIGHT) * (self.yb-self.ya)) + self.ya
+        self.yb = ((self.y_end / self.HEIGHT) * (self.yb-self.ya)) + self.ya
 
         self.drawMandel()
 
